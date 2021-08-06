@@ -1,0 +1,539 @@
+2021-07-22 18:50:33.267 [background-preinit] "  " INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2021-07-22 18:50:33.290 [main] "  " INFO  io.github.talelin.latticy.LatticyApplication - Starting LatticyApplication using Java 1.8.0_292 on 192.168.1.2 with PID 58192 (/Users/mac/Downloads/lin-cms-spring-boot-0.2.1-RELEASE/target/classes started by mac in /Users/mac/Downloads/lin-cms-spring-boot-0.2.1-RELEASE)
+2021-07-22 18:50:33.293 [main] "  " INFO  io.github.talelin.latticy.LatticyApplication - The following profiles are active: dev
+2021-07-22 18:50:34.943 [main] "  " INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'commonConfiguration' of type [io.github.talelin.latticy.common.configuration.CommonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-22 18:50:35.313 [main] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 5000 (http)
+2021-07-22 18:50:35.325 [main] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-5000"]
+2021-07-22 18:50:35.326 [main] "  " INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-07-22 18:50:35.327 [main] "  " INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-22 18:50:35.421 [main] "  " INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-07-22 18:50:35.421 [main] "  " INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2033 ms
+2021-07-22 18:50:39.011 [main] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-07-22 18:50:39.226 [main] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-07-22 18:50:39.353 [main] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-5000"]
+2021-07-22 18:50:39.386 [main] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 5000 (http) with context path ''
+2021-07-22 18:50:39.639 [main] "  " INFO  io.github.talelin.latticy.LatticyApplication - Started LatticyApplication in 8.193 seconds (JVM running for 9.489)
+2021-07-22 18:51:28.652 [http-nio-5000-exec-1] "  " INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-22 18:51:28.652 [http-nio-5000-exec-1] "  " INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-07-22 18:51:28.655 [http-nio-5000-exec-1] "  " INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2021-07-22 18:51:28.710 [http-nio-5000-exec-1] "GET / HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/] from: 0:0:0:0:0:0:0:1 costs: 34ms
+2021-07-22 19:11:51.800 [http-nio-5000-exec-5] "OPTIONS /cms/user/login HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/user/login] from: 127.0.0.1 costs: 29ms
+2021-07-22 19:11:52.533 [http-nio-5000-exec-6] "POST /cms/user/login HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [POST] -> [/cms/user/login] from: 127.0.0.1 costs: 715ms
+2021-07-22 19:11:52.541 [http-nio-5000-exec-7] "OPTIONS /cms/user/permissions HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/user/permissions] from: 127.0.0.1 costs: 0ms
+2021-07-22 19:11:52.713 [http-nio-5000-exec-8] "GET /cms/user/permissions HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/user/permissions] from: 127.0.0.1 costs: 134ms
+2021-07-22 19:12:04.542 [http-nio-5000-exec-9] "OPTIONS /cms/admin/users HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/admin/users] from: 127.0.0.1 costs: 1ms
+2021-07-22 19:12:04.723 [http-nio-5000-exec-10] "GET /cms/admin/users HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/admin/users] from: 127.0.0.1 costs: 159ms
+2021-07-22 19:12:04.770 [http-nio-5000-exec-1] "OPTIONS /cms/admin/group/all HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/admin/group/all] from: 127.0.0.1 costs: 0ms
+2021-07-22 19:12:04.830 [http-nio-5000-exec-2] "GET /cms/admin/group/all HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/admin/group/all] from: 127.0.0.1 costs: 33ms
+2021-07-22 19:12:29.671 [http-nio-5000-exec-3] "OPTIONS /cms/log/users HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/log/users] from: 127.0.0.1 costs: 0ms
+2021-07-22 19:12:29.738 [http-nio-5000-exec-4] "GET /cms/log/users HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/log/users] from: 127.0.0.1 costs: 46ms
+2021-07-22 19:12:29.746 [http-nio-5000-exec-5] "OPTIONS /cms/log HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/log] from: 127.0.0.1 costs: 0ms
+2021-07-22 19:12:29.778 [http-nio-5000-exec-6] "GET /cms/log HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/log] from: 127.0.0.1 costs: 16ms
+2021-07-22 20:47:33.471 [http-nio-5000-exec-8] "GET /v1/book/1 HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/book/1] from: 0:0:0:0:0:0:0:1 costs: 123ms
+2021-07-22 20:47:44.782 [http-nio-5000-exec-9] "OPTIONS /v1/book HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/book] from: 127.0.0.1 costs: 1ms
+2021-07-22 20:47:44.802 [http-nio-5000-exec-10] "GET /v1/book HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/book] from: 127.0.0.1 costs: 13ms
+2021-07-22 20:48:10.306 [http-nio-5000-exec-1] "GET /v1/book/1a HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/book/1a] from: 0:0:0:0:0:0:0:1 costs: 15ms
+2021-07-22 20:48:39.576 [http-nio-5000-exec-3] "GET /v1/book/3 HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/book/3] from: 0:0:0:0:0:0:0:1 costs: 10ms
+2021-07-22 21:01:37.716 [http-nio-5000-exec-8] "POST /v1/book HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [POST] -> [/v1/book] from: 0:0:0:0:0:0:0:1 costs: 32ms
+2021-07-22 21:08:00.435 [http-nio-5000-exec-10] "POST /v1/book HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [POST] -> [/v1/book] from: 0:0:0:0:0:0:0:1 costs: 5ms
+2021-07-22 21:08:05.888 [http-nio-5000-exec-2] "POST /v1/book HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [POST] -> [/v1/book] from: 0:0:0:0:0:0:0:1 costs: 3ms
+2021-07-22 21:10:07.932 [http-nio-5000-exec-4] "POST /v1/book HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [POST] -> [/v1/book] from: 0:0:0:0:0:0:0:1 costs: 8ms
+2021-07-22 21:11:31.954 [http-nio-5000-exec-6] "POST /v1/book HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [POST] -> [/v1/book] from: 0:0:0:0:0:0:0:1 costs: 6ms
+2021-07-22 21:14:00.609 [http-nio-5000-exec-8] "POST /v1/book HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [POST] -> [/v1/book] from: 0:0:0:0:0:0:0:1 costs: 108ms
+2021-07-22 21:17:24.694 [http-nio-5000-exec-10] "GET /v1/book HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/book] from: 127.0.0.1 costs: 14ms
+2021-07-22 21:26:36.503 [http-nio-5000-exec-4] "GET /v1/book HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/book] from: 127.0.0.1 costs: 34ms
+2021-07-22 21:29:33.473 [http-nio-5000-exec-6] "GET /v1/book HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/book] from: 127.0.0.1 costs: 9ms
+2021-07-22 21:33:39.434 [http-nio-5000-exec-8] "GET /v1/book HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/book] from: 127.0.0.1 costs: 15ms
+2021-07-22 21:33:43.745 [http-nio-5000-exec-9] "GET /v1/book HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/book] from: 127.0.0.1 costs: 11ms
+2021-07-22 21:51:33.740 [http-nio-5000-exec-1] "OPTIONS /v1/book/1 HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/book/1] from: 127.0.0.1 costs: 1ms
+2021-07-22 21:51:33.781 [http-nio-5000-exec-2] "GET /v1/book/1 HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/book/1] from: 127.0.0.1 costs: 33ms
+2021-07-22 21:54:14.414 [http-nio-5000-exec-4] "OPTIONS /v1/book HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/book] from: 127.0.0.1 costs: 0ms
+2021-07-22 21:54:14.435 [http-nio-5000-exec-5] "GET /v1/book HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/book] from: 127.0.0.1 costs: 15ms
+2021-07-22 21:54:34.459 [http-nio-5000-exec-6] "OPTIONS /v1/book/3 HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/book/3] from: 127.0.0.1 costs: 1ms
+2021-07-22 21:54:34.470 [http-nio-5000-exec-7] "GET /v1/book/3 HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/book/3] from: 127.0.0.1 costs: 7ms
+2021-07-22 21:54:42.797 [http-nio-5000-exec-8] "GET /v1/book HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/book] from: 127.0.0.1 costs: 6ms
+2021-07-22 21:54:45.364 [http-nio-5000-exec-9] "GET /v1/book/3 HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/book/3] from: 127.0.0.1 costs: 6ms
+2021-07-22 21:54:47.710 [http-nio-5000-exec-10] "OPTIONS /v1/book/3 HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/book/3] from: 127.0.0.1 costs: 0ms
+2021-07-22 21:54:47.797 [http-nio-5000-exec-1] "PUT /v1/book/3 HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [PUT] -> [/v1/book/3] from: 127.0.0.1 costs: 83ms
+2021-07-22 21:54:51.839 [http-nio-5000-exec-2] "GET /v1/book HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/book] from: 127.0.0.1 costs: 6ms
+2021-07-22 22:02:52.360 [SpringApplicationShutdownHook] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-07-22 22:02:52.371 [SpringApplicationShutdownHook] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2021-07-22 22:03:02.853 [background-preinit] "  " INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2021-07-22 22:03:02.860 [main] "  " INFO  io.github.talelin.latticy.LatticyApplication - Starting LatticyApplication using Java 1.8.0_292 on 192.168.1.2 with PID 62114 (/Users/mac/Downloads/lin-cms-spring-boot-0.2.1-RELEASE/target/classes started by mac in /Users/mac/Downloads/lin-cms-spring-boot-0.2.1-RELEASE)
+2021-07-22 22:03:02.861 [main] "  " INFO  io.github.talelin.latticy.LatticyApplication - The following profiles are active: dev
+2021-07-22 22:03:04.697 [main] "  " INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'commonConfiguration' of type [io.github.talelin.latticy.common.configuration.CommonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-22 22:03:05.015 [main] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 5000 (http)
+2021-07-22 22:03:05.028 [main] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-5000"]
+2021-07-22 22:03:05.029 [main] "  " INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-07-22 22:03:05.029 [main] "  " INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-22 22:03:05.124 [main] "  " INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-07-22 22:03:05.125 [main] "  " INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2167 ms
+2021-07-22 22:03:07.086 [main] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-07-22 22:03:07.267 [main] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-07-22 22:03:07.387 [main] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-5000"]
+2021-07-22 22:03:07.420 [main] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 5000 (http) with context path ''
+2021-07-22 22:03:07.658 [main] "  " INFO  io.github.talelin.latticy.LatticyApplication - Started LatticyApplication in 5.758 seconds (JVM running for 6.715)
+2021-07-22 22:04:39.406 [http-nio-5000-exec-1] "  " INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-22 22:04:39.407 [http-nio-5000-exec-1] "  " INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-07-22 22:04:39.412 [http-nio-5000-exec-1] "  " INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2021-07-22 22:04:39.720 [http-nio-5000-exec-1] "GET /v1/book HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/book] from: 127.0.0.1 costs: 245ms
+2021-07-22 22:21:16.203 [http-nio-5000-exec-3] "GET /v1/book HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/book] from: 127.0.0.1 costs: 44ms
+2021-07-22 22:21:40.312 [http-nio-5000-exec-4] "GET /v1/book HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/book] from: 127.0.0.1 costs: 10ms
+2021-07-22 22:21:42.517 [http-nio-5000-exec-5] "GET /v1/book/1 HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/book/1] from: 127.0.0.1 costs: 50ms
+2021-07-22 22:36:48.001 [http-nio-5000-exec-7] "OPTIONS /cms/admin/users HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/admin/users] from: 127.0.0.1 costs: 1ms
+2021-07-22 22:36:48.195 [http-nio-5000-exec-9] "OPTIONS /cms/user/refresh HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/user/refresh] from: 127.0.0.1 costs: 0ms
+2021-07-22 22:36:48.276 [http-nio-5000-exec-10] "GET /cms/user/refresh HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/user/refresh] from: 127.0.0.1 costs: 40ms
+2021-07-22 22:36:48.560 [http-nio-5000-exec-1] "GET /cms/admin/users HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/admin/users] from: 127.0.0.1 costs: 212ms
+2021-07-22 22:36:48.589 [http-nio-5000-exec-2] "OPTIONS /cms/admin/group/all HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/admin/group/all] from: 127.0.0.1 costs: 1ms
+2021-07-22 22:36:48.631 [http-nio-5000-exec-3] "GET /cms/admin/group/all HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/admin/group/all] from: 127.0.0.1 costs: 20ms
+2021-07-22 22:36:53.479 [http-nio-5000-exec-4] "GET /cms/admin/group/all HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/admin/group/all] from: 127.0.0.1 costs: 130ms
+2021-07-22 22:37:04.295 [http-nio-5000-exec-5] "GET /cms/admin/users HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/admin/users] from: 127.0.0.1 costs: 15ms
+2021-07-22 22:37:04.343 [http-nio-5000-exec-6] "GET /cms/admin/group/all HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/admin/group/all] from: 127.0.0.1 costs: 11ms
+2021-07-22 22:37:06.333 [http-nio-5000-exec-7] "GET /cms/admin/group/all HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/admin/group/all] from: 127.0.0.1 costs: 13ms
+2021-07-22 22:37:17.368 [http-nio-5000-exec-8] "GET /cms/admin/group/all HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/admin/group/all] from: 127.0.0.1 costs: 8ms
+2021-07-22 22:37:22.191 [http-nio-5000-exec-9] "GET /cms/admin/users HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/admin/users] from: 127.0.0.1 costs: 18ms
+2021-07-22 22:37:22.242 [http-nio-5000-exec-10] "GET /cms/admin/group/all HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/admin/group/all] from: 127.0.0.1 costs: 15ms
+2021-07-22 22:37:24.023 [http-nio-5000-exec-1] "GET /cms/admin/group/all HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/admin/group/all] from: 127.0.0.1 costs: 8ms
+2021-07-22 22:37:58.849 [http-nio-5000-exec-2] "GET /cms/admin/group/all HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/admin/group/all] from: 127.0.0.1 costs: 7ms
+2021-07-22 22:41:01.279 [http-nio-5000-exec-4] "GET /cms/admin/group/all HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/admin/group/all] from: 127.0.0.1 costs: 9ms
+2021-07-22 22:41:09.700 [http-nio-5000-exec-5] "OPTIONS /cms/admin/permission HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/admin/permission] from: 127.0.0.1 costs: 0ms
+2021-07-22 22:41:09.729 [http-nio-5000-exec-6] "GET /cms/admin/permission HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/admin/permission] from: 127.0.0.1 costs: 13ms
+2021-07-22 22:43:07.456 [http-nio-5000-exec-8] "OPTIONS /cms/log/users HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/log/users] from: 127.0.0.1 costs: 0ms
+2021-07-22 22:43:07.522 [http-nio-5000-exec-9] "GET /cms/log/users HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/log/users] from: 127.0.0.1 costs: 49ms
+2021-07-22 22:43:07.531 [http-nio-5000-exec-10] "OPTIONS /cms/log HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/log] from: 127.0.0.1 costs: 0ms
+2021-07-22 22:43:07.562 [http-nio-5000-exec-1] "GET /cms/log HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/log] from: 127.0.0.1 costs: 16ms
+2021-07-22 22:43:11.874 [http-nio-5000-exec-2] "GET /cms/log/users HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/log/users] from: 127.0.0.1 costs: 7ms
+2021-07-22 22:43:11.922 [http-nio-5000-exec-3] "GET /cms/log HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/log] from: 127.0.0.1 costs: 5ms
+2021-07-22 22:43:21.755 [http-nio-5000-exec-4] "GET /cms/admin/permission HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/admin/permission] from: 127.0.0.1 costs: 4ms
+2021-07-22 22:43:24.340 [http-nio-5000-exec-5] "GET /cms/admin/group/all HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/admin/group/all] from: 127.0.0.1 costs: 7ms
+2021-07-22 22:43:32.573 [http-nio-5000-exec-6] "GET /cms/admin/permission HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/admin/permission] from: 127.0.0.1 costs: 5ms
+2021-07-22 22:43:32.586 [http-nio-5000-exec-7] "OPTIONS /cms/admin/group/2 HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/admin/group/2] from: 127.0.0.1 costs: 0ms
+2021-07-22 22:43:32.635 [http-nio-5000-exec-8] "GET /cms/admin/group/2 HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/admin/group/2] from: 127.0.0.1 costs: 37ms
+2021-07-22 22:43:35.941 [http-nio-5000-exec-9] "GET /cms/log/users HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/log/users] from: 127.0.0.1 costs: 5ms
+2021-07-22 22:43:35.969 [http-nio-5000-exec-10] "GET /cms/log HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/log] from: 127.0.0.1 costs: 12ms
+2021-07-22 22:43:37.565 [http-nio-5000-exec-1] "GET /cms/admin/permission HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/admin/permission] from: 127.0.0.1 costs: 6ms
+2021-07-22 22:43:59.342 [http-nio-5000-exec-2] "OPTIONS /cms/admin/group HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/admin/group] from: 127.0.0.1 costs: 0ms
+2021-07-22 22:43:59.483 [http-nio-5000-exec-3] "POST /cms/admin/group HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [POST] -> [/cms/admin/group] from: 127.0.0.1 costs: 123ms
+2021-07-22 22:43:59.559 [http-nio-5000-exec-4] "GET /cms/admin/group/all HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/admin/group/all] from: 127.0.0.1 costs: 9ms
+2021-07-22 22:43:59.564 [http-nio-5000-exec-5] "GET /cms/admin/permission HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/admin/permission] from: 127.0.0.1 costs: 6ms
+2021-07-22 22:43:59.892 [http-nio-5000-exec-6] "GET /cms/admin/group/all HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/admin/group/all] from: 127.0.0.1 costs: 9ms
+2021-07-22 22:44:06.478 [http-nio-5000-exec-7] "GET /cms/admin/permission HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/admin/permission] from: 127.0.0.1 costs: 5ms
+2021-07-22 22:44:06.492 [http-nio-5000-exec-8] "OPTIONS /cms/admin/group/3 HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/admin/group/3] from: 127.0.0.1 costs: 0ms
+2021-07-22 22:44:06.514 [http-nio-5000-exec-9] "GET /cms/admin/group/3 HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/admin/group/3] from: 127.0.0.1 costs: 10ms
+2021-07-22 22:44:09.933 [http-nio-5000-exec-10] "GET /cms/admin/permission HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/admin/permission] from: 127.0.0.1 costs: 4ms
+2021-07-22 22:44:11.407 [http-nio-5000-exec-1] "GET /cms/admin/group/all HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/admin/group/all] from: 127.0.0.1 costs: 7ms
+2021-07-22 22:44:14.346 [http-nio-5000-exec-2] "GET /cms/admin/group/all HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/admin/group/all] from: 127.0.0.1 costs: 8ms
+2021-07-22 22:44:17.829 [http-nio-5000-exec-3] "GET /cms/admin/group/all HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/admin/group/all] from: 127.0.0.1 costs: 6ms
+2021-07-22 22:44:19.972 [http-nio-5000-exec-4] "GET /cms/admin/group/all HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/admin/group/all] from: 127.0.0.1 costs: 7ms
+2021-07-22 22:44:22.497 [http-nio-5000-exec-5] "GET /cms/admin/users HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/admin/users] from: 127.0.0.1 costs: 11ms
+2021-07-22 22:44:22.537 [http-nio-5000-exec-6] "GET /cms/admin/group/all HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/admin/group/all] from: 127.0.0.1 costs: 7ms
+2021-07-22 22:44:24.184 [http-nio-5000-exec-7] "GET /cms/admin/group/all HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/admin/group/all] from: 127.0.0.1 costs: 9ms
+2021-07-22 22:44:58.621 [http-nio-5000-exec-8] "OPTIONS /cms/user/register HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/user/register] from: 127.0.0.1 costs: 0ms
+2021-07-22 22:44:59.055 [http-nio-5000-exec-9] "POST /cms/user/register HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [POST] -> [/cms/user/register] from: 127.0.0.1 costs: 422ms
+2021-07-22 22:45:04.473 [http-nio-5000-exec-1] "GET /cms/admin/users HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/admin/users] from: 127.0.0.1 costs: 43ms
+2021-07-22 22:45:04.524 [http-nio-5000-exec-2] "GET /cms/admin/group/all HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/admin/group/all] from: 127.0.0.1 costs: 7ms
+2021-07-22 22:45:39.127 [http-nio-5000-exec-3] "GET /cms/log/users HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/log/users] from: 127.0.0.1 costs: 5ms
+2021-07-22 22:45:39.153 [http-nio-5000-exec-4] "GET /cms/log HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/log] from: 127.0.0.1 costs: 6ms
+2021-07-22 22:45:43.891 [http-nio-5000-exec-5] "GET /cms/log/users HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/log/users] from: 127.0.0.1 costs: 11ms
+2021-07-22 22:45:43.928 [http-nio-5000-exec-6] "GET /cms/log HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/log] from: 127.0.0.1 costs: 7ms
+2021-07-22 22:46:07.722 [http-nio-5000-exec-7] "GET /cms/admin/users HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/admin/users] from: 127.0.0.1 costs: 21ms
+2021-07-22 22:46:07.786 [http-nio-5000-exec-8] "GET /cms/admin/group/all HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/admin/group/all] from: 127.0.0.1 costs: 9ms
+2021-07-22 22:46:16.245 [http-nio-5000-exec-9] "OPTIONS /cms/admin/users HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/admin/users] from: 127.0.0.1 costs: 0ms
+2021-07-22 22:46:16.282 [http-nio-5000-exec-10] "GET /cms/admin/users HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/admin/users] from: 127.0.0.1 costs: 24ms
+2021-07-22 23:01:31.809 [http-nio-5000-exec-2] "GET /cms/admin/group/all HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/admin/group/all] from: 127.0.0.1 costs: 18ms
+2021-07-22 23:01:43.277 [http-nio-5000-exec-3] "GET /cms/admin/permission HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/admin/permission] from: 127.0.0.1 costs: 7ms
+2021-07-22 23:01:43.322 [http-nio-5000-exec-4] "GET /cms/admin/group/2 HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/admin/group/2] from: 127.0.0.1 costs: 12ms
+2021-07-22 23:01:47.475 [http-nio-5000-exec-5] "GET /cms/admin/group/all HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/admin/group/all] from: 127.0.0.1 costs: 7ms
+2021-07-22 23:01:49.341 [http-nio-5000-exec-6] "GET /cms/admin/permission HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/admin/permission] from: 127.0.0.1 costs: 5ms
+2021-07-22 23:03:38.770 [http-nio-5000-exec-8] "GET /cms/admin/users HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/admin/users] from: 127.0.0.1 costs: 22ms
+2021-07-22 23:03:38.824 [http-nio-5000-exec-9] "GET /cms/admin/group/all HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/admin/group/all] from: 127.0.0.1 costs: 10ms
+2021-07-22 23:04:12.541 [http-nio-5000-exec-10] "OPTIONS /cms/user/login HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/user/login] from: 127.0.0.1 costs: 0ms
+2021-07-22 23:04:12.873 [http-nio-5000-exec-1] "POST /cms/user/login HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [POST] -> [/cms/user/login] from: 127.0.0.1 costs: 328ms
+2021-07-22 23:04:12.879 [http-nio-5000-exec-2] "OPTIONS /cms/user/permissions HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/user/permissions] from: 127.0.0.1 costs: 0ms
+2021-07-22 23:04:12.916 [http-nio-5000-exec-3] "GET /cms/user/permissions HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/user/permissions] from: 127.0.0.1 costs: 32ms
+2021-07-22 23:04:42.704 [http-nio-5000-exec-4] "OPTIONS /v1/book HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/book] from: 127.0.0.1 costs: 0ms
+2021-07-22 23:04:42.717 [http-nio-5000-exec-5] "GET /v1/book HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/book] from: 127.0.0.1 costs: 4ms
+2021-07-22 23:04:51.023 [http-nio-5000-exec-6] "GET /cms/log/users HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/log/users] from: 127.0.0.1 costs: 6ms
+2021-07-22 23:04:51.047 [http-nio-5000-exec-7] "GET /cms/log HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/log] from: 127.0.0.1 costs: 5ms
+2021-07-22 23:04:56.900 [http-nio-5000-exec-8] "POST /cms/user/login HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [POST] -> [/cms/user/login] from: 127.0.0.1 costs: 334ms
+2021-07-22 23:04:56.919 [http-nio-5000-exec-9] "GET /cms/user/permissions HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/user/permissions] from: 127.0.0.1 costs: 9ms
+2021-07-22 23:05:39.627 [http-nio-5000-exec-10] "GET /cms/admin/users HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/admin/users] from: 127.0.0.1 costs: 16ms
+2021-07-22 23:05:39.696 [http-nio-5000-exec-1] "GET /cms/admin/group/all HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/admin/group/all] from: 127.0.0.1 costs: 8ms
+2021-07-22 23:05:48.130 [http-nio-5000-exec-2] "GET /cms/admin/group/all HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/admin/group/all] from: 127.0.0.1 costs: 8ms
+2021-07-22 23:05:50.886 [http-nio-5000-exec-3] "GET /cms/admin/permission HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/admin/permission] from: 127.0.0.1 costs: 5ms
+2021-07-22 23:05:50.914 [http-nio-5000-exec-4] "GET /cms/admin/group/3 HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/admin/group/3] from: 127.0.0.1 costs: 8ms
+2021-07-22 23:06:08.598 [http-nio-5000-exec-5] "GET /cms/admin/group/all HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/admin/group/all] from: 127.0.0.1 costs: 7ms
+2021-07-22 23:46:20.314 [SpringApplicationShutdownHook] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-07-22 23:46:20.330 [SpringApplicationShutdownHook] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2021-07-22 23:46:26.994 [main] "  " INFO  io.github.talelin.latticy.LatticyApplication - Starting LatticyApplication using Java 1.8.0_292 on 192.168.1.2 with PID 63350 (/Users/mac/Downloads/lin-cms-spring-boot-0.2.1-RELEASE/target/classes started by mac in /Users/mac/Downloads/lin-cms-spring-boot-0.2.1-RELEASE)
+2021-07-22 23:46:26.994 [background-preinit] "  " INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2021-07-22 23:46:26.999 [main] "  " INFO  io.github.talelin.latticy.LatticyApplication - The following profiles are active: dev
+2021-07-22 23:46:28.671 [main] "  " INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'commonConfiguration' of type [io.github.talelin.latticy.common.configuration.CommonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-22 23:46:28.945 [main] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 5000 (http)
+2021-07-22 23:46:28.955 [main] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-5000"]
+2021-07-22 23:46:28.956 [main] "  " INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-07-22 23:46:28.956 [main] "  " INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-22 23:46:29.060 [main] "  " INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-07-22 23:46:29.060 [main] "  " INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1967 ms
+2021-07-22 23:46:31.956 [main] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-07-22 23:46:32.207 [main] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-07-22 23:46:32.387 [main] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-5000"]
+2021-07-22 23:46:32.424 [main] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 5000 (http) with context path ''
+2021-07-22 23:46:32.642 [main] "  " INFO  io.github.talelin.latticy.LatticyApplication - Started LatticyApplication in 6.461 seconds (JVM running for 7.275)
+2021-07-22 23:47:23.547 [http-nio-5000-exec-1] "  " INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-22 23:47:23.547 [http-nio-5000-exec-1] "  " INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-07-22 23:47:23.552 [http-nio-5000-exec-1] "  " INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2021-07-22 23:47:23.604 [http-nio-5000-exec-1] "GET / HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/] from: 0:0:0:0:0:0:0:1 costs: 32ms
+2021-07-22 23:47:43.077 [http-nio-5000-exec-2] "GET /v1/test/test1 HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/test/test1] from: 0:0:0:0:0:0:0:1 costs: 4ms
+2021-07-22 23:48:00.959 [http-nio-5000-exec-3] "GET /v1/test/test1 HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/test/test1] from: 0:0:0:0:0:0:0:1 costs: 4ms
+2021-07-22 23:48:37.377 [SpringApplicationShutdownHook] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-07-22 23:48:37.387 [SpringApplicationShutdownHook] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2021-07-22 23:49:04.451 [background-preinit] "  " INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2021-07-22 23:49:04.460 [restartedMain] "  " INFO  io.github.talelin.latticy.LatticyApplication - Starting LatticyApplication using Java 1.8.0_292 on 192.168.1.2 with PID 63375 (/Users/mac/Downloads/lin-cms-spring-boot-0.2.1-RELEASE/target/classes started by mac in /Users/mac/Downloads/lin-cms-spring-boot-0.2.1-RELEASE)
+2021-07-22 23:49:04.461 [restartedMain] "  " INFO  io.github.talelin.latticy.LatticyApplication - The following profiles are active: dev
+2021-07-22 23:49:04.526 [restartedMain] "  " INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-22 23:49:05.814 [restartedMain] "  " INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'commonConfiguration' of type [io.github.talelin.latticy.common.configuration.CommonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-22 23:49:06.141 [restartedMain] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 5000 (http)
+2021-07-22 23:49:06.150 [restartedMain] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-5000"]
+2021-07-22 23:49:06.151 [restartedMain] "  " INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-07-22 23:49:06.151 [restartedMain] "  " INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-22 23:49:06.230 [restartedMain] "  " INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-07-22 23:49:06.231 [restartedMain] "  " INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1703 ms
+2021-07-22 23:49:06.373 [restartedMain] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-07-22 23:49:06.527 [restartedMain] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-07-22 23:49:06.533 [restartedMain] "  " INFO  o.s.b.autoconfigure.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/sleeve?useSSL=false&serverTimezone=UTC&characterEncoding=UTF8'
+2021-07-22 23:49:08.345 [restartedMain] "  " INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-07-22 23:49:08.378 [restartedMain] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-5000"]
+2021-07-22 23:49:08.406 [restartedMain] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 5000 (http) with context path ''
+2021-07-22 23:49:08.590 [restartedMain] "  " INFO  io.github.talelin.latticy.LatticyApplication - Started LatticyApplication in 4.748 seconds (JVM running for 5.517)
+2021-07-22 23:49:24.045 [http-nio-5000-exec-1] "  " INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-22 23:49:24.051 [http-nio-5000-exec-1] "  " INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-07-22 23:49:24.057 [http-nio-5000-exec-1] "  " INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2021-07-22 23:49:24.110 [http-nio-5000-exec-1] "GET /v1/test/test1 HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/test/test1] from: 0:0:0:0:0:0:0:1 costs: 31ms
+2021-07-22 23:49:48.574 [Thread-15] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-07-22 23:49:48.585 [Thread-15] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2021-07-22 23:49:49.068 [restartedMain] "  " INFO  io.github.talelin.latticy.LatticyApplication - Starting LatticyApplication using Java 1.8.0_292 on 192.168.1.2 with PID 63375 (/Users/mac/Downloads/lin-cms-spring-boot-0.2.1-RELEASE/target/classes started by mac in /Users/mac/Downloads/lin-cms-spring-boot-0.2.1-RELEASE)
+2021-07-22 23:49:49.069 [restartedMain] "  " INFO  io.github.talelin.latticy.LatticyApplication - The following profiles are active: dev
+2021-07-22 23:49:49.496 [restartedMain] "  " INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'commonConfiguration' of type [io.github.talelin.latticy.common.configuration.CommonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-22 23:49:49.606 [restartedMain] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 5000 (http)
+2021-07-22 23:49:49.607 [restartedMain] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-5000"]
+2021-07-22 23:49:49.607 [restartedMain] "  " INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-07-22 23:49:49.607 [restartedMain] "  " INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-22 23:49:49.618 [restartedMain] "  " INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-07-22 23:49:49.618 [restartedMain] "  " INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 545 ms
+2021-07-22 23:49:49.663 [restartedMain] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2021-07-22 23:49:49.670 [restartedMain] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2021-07-22 23:49:49.671 [restartedMain] "  " INFO  o.s.b.autoconfigure.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/sleeve?useSSL=false&serverTimezone=UTC&characterEncoding=UTF8'
+2021-07-22 23:49:50.900 [restartedMain] "  " INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-07-22 23:49:50.927 [restartedMain] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-5000"]
+2021-07-22 23:49:50.930 [restartedMain] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 5000 (http) with context path ''
+2021-07-22 23:49:50.994 [restartedMain] "  " INFO  io.github.talelin.latticy.LatticyApplication - Started LatticyApplication in 2.02 seconds (JVM running for 47.921)
+2021-07-22 23:49:50.996 [restartedMain] "  " INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-07-22 23:49:52.364 [Thread-21] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2021-07-22 23:49:52.368 [Thread-21] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2021-07-22 23:49:52.597 [restartedMain] "  " INFO  io.github.talelin.latticy.LatticyApplication - Starting LatticyApplication using Java 1.8.0_292 on 192.168.1.2 with PID 63375 (/Users/mac/Downloads/lin-cms-spring-boot-0.2.1-RELEASE/target/classes started by mac in /Users/mac/Downloads/lin-cms-spring-boot-0.2.1-RELEASE)
+2021-07-22 23:49:52.597 [restartedMain] "  " INFO  io.github.talelin.latticy.LatticyApplication - The following profiles are active: dev
+2021-07-22 23:49:52.879 [restartedMain] "  " INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'commonConfiguration' of type [io.github.talelin.latticy.common.configuration.CommonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-22 23:49:52.942 [restartedMain] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 5000 (http)
+2021-07-22 23:49:52.943 [restartedMain] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-5000"]
+2021-07-22 23:49:52.944 [restartedMain] "  " INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-07-22 23:49:52.944 [restartedMain] "  " INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-22 23:49:52.956 [restartedMain] "  " INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-07-22 23:49:52.957 [restartedMain] "  " INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 355 ms
+2021-07-22 23:49:52.979 [restartedMain] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2021-07-22 23:49:52.987 [restartedMain] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2021-07-22 23:49:52.988 [restartedMain] "  " INFO  o.s.b.autoconfigure.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/sleeve?useSSL=false&serverTimezone=UTC&characterEncoding=UTF8'
+2021-07-22 23:49:53.882 [restartedMain] "  " INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-07-22 23:49:53.911 [restartedMain] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-5000"]
+2021-07-22 23:49:53.913 [restartedMain] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 5000 (http) with context path ''
+2021-07-22 23:49:53.960 [restartedMain] "  " INFO  io.github.talelin.latticy.LatticyApplication - Started LatticyApplication in 1.425 seconds (JVM running for 50.887)
+2021-07-22 23:49:53.961 [restartedMain] "  " INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-07-22 23:49:57.784 [http-nio-5000-exec-1] "  " INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-22 23:49:57.785 [http-nio-5000-exec-1] "  " INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-07-22 23:49:57.788 [http-nio-5000-exec-1] "  " INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2021-07-22 23:49:57.792 [http-nio-5000-exec-1] "GET /v1/test/test1 HTTP/1.1" INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/test/test1] from: 0:0:0:0:0:0:0:1 costs: 3ms
+2021-07-22 23:52:01.732 [Thread-25] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2021-07-22 23:52:01.737 [Thread-25] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2021-07-22 23:52:02.066 [restartedMain] "  " INFO  io.github.talelin.latticy.LatticyApplication - Starting LatticyApplication using Java 1.8.0_292 on 192.168.1.2 with PID 63375 (/Users/mac/Downloads/lin-cms-spring-boot-0.2.1-RELEASE/target/classes started by mac in /Users/mac/Downloads/lin-cms-spring-boot-0.2.1-RELEASE)
+2021-07-22 23:52:02.067 [restartedMain] "  " INFO  io.github.talelin.latticy.LatticyApplication - The following profiles are active: dev
+2021-07-22 23:52:02.439 [restartedMain] "  " INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'commonConfiguration' of type [io.github.talelin.latticy.common.configuration.CommonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-22 23:52:02.534 [restartedMain] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 5000 (http)
+2021-07-22 23:52:02.535 [restartedMain] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-5000"]
+2021-07-22 23:52:02.536 [restartedMain] "  " INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-07-22 23:52:02.536 [restartedMain] "  " INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-22 23:52:02.547 [restartedMain] "  " INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-07-22 23:52:02.548 [restartedMain] "  " INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 478 ms
+2021-07-22 23:52:02.574 [restartedMain] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+2021-07-22 23:52:02.587 [restartedMain] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+2021-07-22 23:52:02.588 [restartedMain] "  " INFO  o.s.b.autoconfigure.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/sleeve?useSSL=false&serverTimezone=UTC&characterEncoding=UTF8'
+2021-07-22 23:52:03.670 [restartedMain] "  " INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-07-22 23:52:03.691 [restartedMain] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-5000"]
+2021-07-22 23:52:03.693 [restartedMain] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 5000 (http) with context path ''
+2021-07-22 23:52:03.734 [restartedMain] "  " INFO  io.github.talelin.latticy.LatticyApplication - Started LatticyApplication in 1.728 seconds (JVM running for 180.663)
+2021-07-22 23:52:03.736 [restartedMain] "  " INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-07-22 23:53:01.170 [Thread-29] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+2021-07-22 23:53:01.175 [Thread-29] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+2021-07-22 23:53:01.442 [restartedMain] "  " INFO  io.github.talelin.latticy.LatticyApplication - Starting LatticyApplication using Java 1.8.0_292 on 192.168.1.2 with PID 63375 (/Users/mac/Downloads/lin-cms-spring-boot-0.2.1-RELEASE/target/classes started by mac in /Users/mac/Downloads/lin-cms-spring-boot-0.2.1-RELEASE)
+2021-07-22 23:53:01.442 [restartedMain] "  " INFO  io.github.talelin.latticy.LatticyApplication - The following profiles are active: dev
+2021-07-22 23:53:01.774 [restartedMain] "  " INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'commonConfiguration' of type [io.github.talelin.latticy.common.configuration.CommonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-22 23:53:01.855 [restartedMain] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 5000 (http)
+2021-07-22 23:53:01.856 [restartedMain] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-5000"]
+2021-07-22 23:53:01.857 [restartedMain] "  " INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-07-22 23:53:01.857 [restartedMain] "  " INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-22 23:53:01.867 [restartedMain] "  " INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-07-22 23:53:01.868 [restartedMain] "  " INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 423 ms
+2021-07-22 23:53:01.900 [restartedMain] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
+2021-07-22 23:53:01.906 [restartedMain] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
+2021-07-22 23:53:01.906 [restartedMain] "  " INFO  o.s.b.autoconfigure.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/sleeve?useSSL=false&serverTimezone=UTC&characterEncoding=UTF8'
+2021-07-22 23:53:02.895 [restartedMain] "  " INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-07-22 23:53:02.925 [restartedMain] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-5000"]
+2021-07-22 23:53:02.928 [restartedMain] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 5000 (http) with context path ''
+2021-07-22 23:53:02.984 [restartedMain] "  " INFO  io.github.talelin.latticy.LatticyApplication - Started LatticyApplication in 1.6 seconds (JVM running for 239.913)
+2021-07-22 23:53:02.986 [restartedMain] "  " INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-07-22 23:53:50.226 [Thread-33] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown initiated...
+2021-07-22 23:53:50.237 [Thread-33] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown completed.
+2021-07-22 23:53:50.543 [restartedMain] "  " INFO  io.github.talelin.latticy.LatticyApplication - Starting LatticyApplication using Java 1.8.0_292 on 192.168.1.2 with PID 63375 (/Users/mac/Downloads/lin-cms-spring-boot-0.2.1-RELEASE/target/classes started by mac in /Users/mac/Downloads/lin-cms-spring-boot-0.2.1-RELEASE)
+2021-07-22 23:53:50.544 [restartedMain] "  " INFO  io.github.talelin.latticy.LatticyApplication - The following profiles are active: dev
+2021-07-22 23:53:50.936 [restartedMain] "  " INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'commonConfiguration' of type [io.github.talelin.latticy.common.configuration.CommonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-22 23:53:51.050 [restartedMain] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 5000 (http)
+2021-07-22 23:53:51.051 [restartedMain] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-5000"]
+2021-07-22 23:53:51.051 [restartedMain] "  " INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-07-22 23:53:51.051 [restartedMain] "  " INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-22 23:53:51.067 [restartedMain] "  " INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-07-22 23:53:51.067 [restartedMain] "  " INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 520 ms
+2021-07-22 23:53:51.097 [restartedMain] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Starting...
+2021-07-22 23:53:51.103 [restartedMain] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Start completed.
+2021-07-22 23:53:51.103 [restartedMain] "  " INFO  o.s.b.autoconfigure.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/sleeve?useSSL=false&serverTimezone=UTC&characterEncoding=UTF8'
+2021-07-22 23:53:52.024 [restartedMain] "  " INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-07-22 23:53:52.050 [restartedMain] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-5000"]
+2021-07-22 23:53:52.052 [restartedMain] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 5000 (http) with context path ''
+2021-07-22 23:53:52.114 [restartedMain] "  " INFO  io.github.talelin.latticy.LatticyApplication - Started LatticyApplication in 1.638 seconds (JVM running for 289.043)
+2021-07-22 23:53:52.116 [restartedMain] "  " INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-07-22 23:53:53.479 [Thread-37] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown initiated...
+2021-07-22 23:53:53.485 [Thread-37] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown completed.
+2021-07-22 23:53:53.775 [restartedMain] "  " INFO  io.github.talelin.latticy.LatticyApplication - Starting LatticyApplication using Java 1.8.0_292 on 192.168.1.2 with PID 63375 (/Users/mac/Downloads/lin-cms-spring-boot-0.2.1-RELEASE/target/classes started by mac in /Users/mac/Downloads/lin-cms-spring-boot-0.2.1-RELEASE)
+2021-07-22 23:53:53.776 [restartedMain] "  " INFO  io.github.talelin.latticy.LatticyApplication - The following profiles are active: dev
+2021-07-22 23:53:54.123 [restartedMain] "  " INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'commonConfiguration' of type [io.github.talelin.latticy.common.configuration.CommonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-22 23:53:54.205 [restartedMain] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 5000 (http)
+2021-07-22 23:53:54.206 [restartedMain] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-5000"]
+2021-07-22 23:53:54.207 [restartedMain] "  " INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-07-22 23:53:54.207 [restartedMain] "  " INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-22 23:53:54.215 [restartedMain] "  " INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-07-22 23:53:54.215 [restartedMain] "  " INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 436 ms
+2021-07-22 23:53:54.241 [restartedMain] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Starting...
+2021-07-22 23:53:54.245 [restartedMain] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Start completed.
+2021-07-22 23:53:54.245 [restartedMain] "  " INFO  o.s.b.autoconfigure.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/sleeve?useSSL=false&serverTimezone=UTC&characterEncoding=UTF8'
+2021-07-22 23:53:55.123 [restartedMain] "  " INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-07-22 23:53:55.150 [restartedMain] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-5000"]
+2021-07-22 23:53:55.152 [restartedMain] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 5000 (http) with context path ''
+2021-07-22 23:53:55.205 [restartedMain] "  " INFO  io.github.talelin.latticy.LatticyApplication - Started LatticyApplication in 1.489 seconds (JVM running for 292.135)
+2021-07-22 23:53:55.207 [restartedMain] "  " INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-07-22 23:54:07.795 [Thread-41] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown initiated...
+2021-07-22 23:54:07.800 [Thread-41] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown completed.
+2021-07-22 23:54:08.139 [restartedMain] "  " INFO  io.github.talelin.latticy.LatticyApplication - Starting LatticyApplication using Java 1.8.0_292 on 192.168.1.2 with PID 63375 (/Users/mac/Downloads/lin-cms-spring-boot-0.2.1-RELEASE/target/classes started by mac in /Users/mac/Downloads/lin-cms-spring-boot-0.2.1-RELEASE)
+2021-07-22 23:54:08.139 [restartedMain] "  " INFO  io.github.talelin.latticy.LatticyApplication - The following profiles are active: dev
+2021-07-22 23:54:08.455 [restartedMain] "  " INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'commonConfiguration' of type [io.github.talelin.latticy.common.configuration.CommonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-22 23:54:08.520 [restartedMain] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 5000 (http)
+2021-07-22 23:54:08.521 [restartedMain] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-5000"]
+2021-07-22 23:54:08.521 [restartedMain] "  " INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-07-22 23:54:08.521 [restartedMain] "  " INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-22 23:54:08.530 [restartedMain] "  " INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-07-22 23:54:08.530 [restartedMain] "  " INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 388 ms
+2021-07-22 23:54:08.559 [restartedMain] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Starting...
+2021-07-22 23:54:08.563 [restartedMain] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Start completed.
+2021-07-22 23:54:08.563 [restartedMain] "  " INFO  o.s.b.autoconfigure.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/sleeve?useSSL=false&serverTimezone=UTC&characterEncoding=UTF8'
+2021-07-22 23:54:09.471 [restartedMain] "  " INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-07-22 23:54:09.505 [restartedMain] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-5000"]
+2021-07-22 23:54:09.507 [restartedMain] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 5000 (http) with context path ''
+2021-07-22 23:54:09.561 [restartedMain] "  " INFO  io.github.talelin.latticy.LatticyApplication - Started LatticyApplication in 1.473 seconds (JVM running for 306.491)
+2021-07-22 23:54:09.563 [restartedMain] "  " INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-07-22 23:54:10.935 [Thread-45] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown initiated...
+2021-07-22 23:54:10.937 [Thread-45] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown completed.
+2021-07-22 23:54:11.313 [restartedMain] "  " INFO  io.github.talelin.latticy.LatticyApplication - Starting LatticyApplication using Java 1.8.0_292 on 192.168.1.2 with PID 63375 (/Users/mac/Downloads/lin-cms-spring-boot-0.2.1-RELEASE/target/classes started by mac in /Users/mac/Downloads/lin-cms-spring-boot-0.2.1-RELEASE)
+2021-07-22 23:54:11.313 [restartedMain] "  " INFO  io.github.talelin.latticy.LatticyApplication - The following profiles are active: dev
+2021-07-22 23:54:11.567 [restartedMain] "  " INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'commonConfiguration' of type [io.github.talelin.latticy.common.configuration.CommonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-22 23:54:11.631 [restartedMain] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 5000 (http)
+2021-07-22 23:54:11.631 [restartedMain] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-5000"]
+2021-07-22 23:54:11.632 [restartedMain] "  " INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-07-22 23:54:11.632 [restartedMain] "  " INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-22 23:54:11.642 [restartedMain] "  " INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-07-22 23:54:11.642 [restartedMain] "  " INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 326 ms
+2021-07-22 23:54:11.669 [restartedMain] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Starting...
+2021-07-22 23:54:11.675 [restartedMain] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Start completed.
+2021-07-22 23:54:11.675 [restartedMain] "  " INFO  o.s.b.autoconfigure.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/sleeve?useSSL=false&serverTimezone=UTC&characterEncoding=UTF8'
+2021-07-22 23:54:12.469 [restartedMain] "  " INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-07-22 23:54:12.491 [restartedMain] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-5000"]
+2021-07-22 23:54:12.493 [restartedMain] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 5000 (http) with context path ''
+2021-07-22 23:54:12.527 [restartedMain] "  " INFO  io.github.talelin.latticy.LatticyApplication - Started LatticyApplication in 1.266 seconds (JVM running for 309.457)
+2021-07-22 23:54:12.529 [restartedMain] "  " INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-07-22 23:54:52.660 [Thread-49] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Shutdown initiated...
+2021-07-22 23:54:52.667 [Thread-49] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Shutdown completed.
+2021-07-22 23:54:52.898 [restartedMain] "  " INFO  io.github.talelin.latticy.LatticyApplication - Starting LatticyApplication using Java 1.8.0_292 on 192.168.1.2 with PID 63375 (/Users/mac/Downloads/lin-cms-spring-boot-0.2.1-RELEASE/target/classes started by mac in /Users/mac/Downloads/lin-cms-spring-boot-0.2.1-RELEASE)
+2021-07-22 23:54:52.899 [restartedMain] "  " INFO  io.github.talelin.latticy.LatticyApplication - The following profiles are active: dev
+2021-07-22 23:54:53.202 [restartedMain] "  " INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'commonConfiguration' of type [io.github.talelin.latticy.common.configuration.CommonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-22 23:54:53.295 [restartedMain] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 5000 (http)
+2021-07-22 23:54:53.296 [restartedMain] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-5000"]
+2021-07-22 23:54:53.296 [restartedMain] "  " INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-07-22 23:54:53.297 [restartedMain] "  " INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-22 23:54:53.312 [restartedMain] "  " INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-07-22 23:54:53.313 [restartedMain] "  " INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 412 ms
+2021-07-22 23:54:53.351 [restartedMain] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Starting...
+2021-07-22 23:54:53.362 [restartedMain] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Start completed.
+2021-07-22 23:54:53.362 [restartedMain] "  " INFO  o.s.b.autoconfigure.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/sleeve?useSSL=false&serverTimezone=UTC&characterEncoding=UTF8'
+2021-07-22 23:54:54.325 [restartedMain] "  " INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-07-22 23:54:54.349 [restartedMain] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-5000"]
+2021-07-22 23:54:54.350 [restartedMain] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 5000 (http) with context path ''
+2021-07-22 23:54:54.390 [restartedMain] "  " INFO  io.github.talelin.latticy.LatticyApplication - Started LatticyApplication in 1.545 seconds (JVM running for 351.32)
+2021-07-22 23:54:54.392 [restartedMain] "  " INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-07-22 23:54:55.775 [Thread-53] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Shutdown initiated...
+2021-07-22 23:54:55.777 [Thread-53] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Shutdown completed.
+2021-07-22 23:54:56.064 [restartedMain] "  " INFO  io.github.talelin.latticy.LatticyApplication - Starting LatticyApplication using Java 1.8.0_292 on 192.168.1.2 with PID 63375 (/Users/mac/Downloads/lin-cms-spring-boot-0.2.1-RELEASE/target/classes started by mac in /Users/mac/Downloads/lin-cms-spring-boot-0.2.1-RELEASE)
+2021-07-22 23:54:56.064 [restartedMain] "  " INFO  io.github.talelin.latticy.LatticyApplication - The following profiles are active: dev
+2021-07-22 23:54:56.316 [restartedMain] "  " INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'commonConfiguration' of type [io.github.talelin.latticy.common.configuration.CommonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-22 23:54:56.383 [restartedMain] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 5000 (http)
+2021-07-22 23:54:56.384 [restartedMain] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-5000"]
+2021-07-22 23:54:56.384 [restartedMain] "  " INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-07-22 23:54:56.384 [restartedMain] "  " INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-22 23:54:56.392 [restartedMain] "  " INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-07-22 23:54:56.392 [restartedMain] "  " INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 325 ms
+2021-07-22 23:54:56.417 [restartedMain] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Starting...
+2021-07-22 23:54:56.420 [restartedMain] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Start completed.
+2021-07-22 23:54:56.420 [restartedMain] "  " INFO  o.s.b.autoconfigure.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/sleeve?useSSL=false&serverTimezone=UTC&characterEncoding=UTF8'
+2021-07-22 23:54:57.221 [restartedMain] "  " INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-07-22 23:54:57.244 [restartedMain] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-5000"]
+2021-07-22 23:54:57.247 [restartedMain] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 5000 (http) with context path ''
+2021-07-22 23:54:57.293 [restartedMain] "  " INFO  io.github.talelin.latticy.LatticyApplication - Started LatticyApplication in 1.277 seconds (JVM running for 354.223)
+2021-07-22 23:54:57.295 [restartedMain] "  " INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-07-22 23:56:04.930 [Thread-57] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Shutdown initiated...
+2021-07-22 23:56:04.933 [Thread-57] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Shutdown completed.
+2021-07-22 23:56:05.315 [restartedMain] "  " INFO  io.github.talelin.latticy.LatticyApplication - Starting LatticyApplication using Java 1.8.0_292 on 192.168.1.2 with PID 63375 (/Users/mac/Downloads/lin-cms-spring-boot-0.2.1-RELEASE/target/classes started by mac in /Users/mac/Downloads/lin-cms-spring-boot-0.2.1-RELEASE)
+2021-07-22 23:56:05.316 [restartedMain] "  " INFO  io.github.talelin.latticy.LatticyApplication - The following profiles are active: dev
+2021-07-22 23:56:05.699 [restartedMain] "  " INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'commonConfiguration' of type [io.github.talelin.latticy.common.configuration.CommonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-22 23:56:05.800 [restartedMain] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 5000 (http)
+2021-07-22 23:56:05.801 [restartedMain] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-5000"]
+2021-07-22 23:56:05.802 [restartedMain] "  " INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-07-22 23:56:05.802 [restartedMain] "  " INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-22 23:56:05.812 [restartedMain] "  " INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-07-22 23:56:05.812 [restartedMain] "  " INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 493 ms
+2021-07-22 23:56:05.843 [restartedMain] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-12 - Starting...
+2021-07-22 23:56:05.849 [restartedMain] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-12 - Start completed.
+2021-07-22 23:56:05.849 [restartedMain] "  " INFO  o.s.b.autoconfigure.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/sleeve?useSSL=false&serverTimezone=UTC&characterEncoding=UTF8'
+2021-07-22 23:56:06.747 [restartedMain] "  " INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-07-22 23:56:06.771 [restartedMain] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-5000"]
+2021-07-22 23:56:06.773 [restartedMain] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 5000 (http) with context path ''
+2021-07-22 23:56:06.811 [restartedMain] "  " INFO  io.github.talelin.latticy.LatticyApplication - Started LatticyApplication in 1.55 seconds (JVM running for 423.742)
+2021-07-22 23:56:06.813 [restartedMain] "  " INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-07-22 23:56:08.186 [Thread-61] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-12 - Shutdown initiated...
+2021-07-22 23:56:08.188 [Thread-61] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-12 - Shutdown completed.
+2021-07-22 23:56:08.515 [restartedMain] "  " INFO  io.github.talelin.latticy.LatticyApplication - Starting LatticyApplication using Java 1.8.0_292 on 192.168.1.2 with PID 63375 (/Users/mac/Downloads/lin-cms-spring-boot-0.2.1-RELEASE/target/classes started by mac in /Users/mac/Downloads/lin-cms-spring-boot-0.2.1-RELEASE)
+2021-07-22 23:56:08.515 [restartedMain] "  " INFO  io.github.talelin.latticy.LatticyApplication - The following profiles are active: dev
+2021-07-22 23:56:08.786 [restartedMain] "  " INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'commonConfiguration' of type [io.github.talelin.latticy.common.configuration.CommonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-22 23:56:08.856 [restartedMain] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 5000 (http)
+2021-07-22 23:56:08.858 [restartedMain] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-5000"]
+2021-07-22 23:56:08.858 [restartedMain] "  " INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-07-22 23:56:08.858 [restartedMain] "  " INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-22 23:56:08.866 [restartedMain] "  " INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-07-22 23:56:08.866 [restartedMain] "  " INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 348 ms
+2021-07-22 23:56:08.888 [restartedMain] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-13 - Starting...
+2021-07-22 23:56:08.893 [restartedMain] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-13 - Start completed.
+2021-07-22 23:56:08.893 [restartedMain] "  " INFO  o.s.b.autoconfigure.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/sleeve?useSSL=false&serverTimezone=UTC&characterEncoding=UTF8'
+2021-07-22 23:56:09.684 [restartedMain] "  " INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-07-22 23:56:09.706 [restartedMain] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-5000"]
+2021-07-22 23:56:09.708 [restartedMain] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 5000 (http) with context path ''
+2021-07-22 23:56:09.746 [restartedMain] "  " INFO  io.github.talelin.latticy.LatticyApplication - Started LatticyApplication in 1.273 seconds (JVM running for 426.676)
+2021-07-22 23:56:09.747 [restartedMain] "  " INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-07-22 23:56:50.907 [Thread-65] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-13 - Shutdown initiated...
+2021-07-22 23:56:50.908 [Thread-65] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-13 - Shutdown completed.
+2021-07-22 23:56:51.160 [restartedMain] "  " INFO  io.github.talelin.latticy.LatticyApplication - Starting LatticyApplication using Java 1.8.0_292 on 192.168.1.2 with PID 63375 (/Users/mac/Downloads/lin-cms-spring-boot-0.2.1-RELEASE/target/classes started by mac in /Users/mac/Downloads/lin-cms-spring-boot-0.2.1-RELEASE)
+2021-07-22 23:56:51.161 [restartedMain] "  " INFO  io.github.talelin.latticy.LatticyApplication - The following profiles are active: dev
+2021-07-22 23:56:51.417 [restartedMain] "  " INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'commonConfiguration' of type [io.github.talelin.latticy.common.configuration.CommonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-22 23:56:51.503 [restartedMain] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 5000 (http)
+2021-07-22 23:56:51.504 [restartedMain] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-5000"]
+2021-07-22 23:56:51.504 [restartedMain] "  " INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-07-22 23:56:51.504 [restartedMain] "  " INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-22 23:56:51.512 [restartedMain] "  " INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-07-22 23:56:51.513 [restartedMain] "  " INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 350 ms
+2021-07-22 23:56:51.539 [restartedMain] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-14 - Starting...
+2021-07-22 23:56:51.545 [restartedMain] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-14 - Start completed.
+2021-07-22 23:56:51.545 [restartedMain] "  " INFO  o.s.b.autoconfigure.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/sleeve?useSSL=false&serverTimezone=UTC&characterEncoding=UTF8'
+2021-07-22 23:56:52.470 [restartedMain] "  " INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-07-22 23:56:52.496 [restartedMain] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-5000"]
+2021-07-22 23:56:52.499 [restartedMain] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 5000 (http) with context path ''
+2021-07-22 23:56:52.557 [restartedMain] "  " INFO  io.github.talelin.latticy.LatticyApplication - Started LatticyApplication in 1.445 seconds (JVM running for 469.488)
+2021-07-22 23:56:52.559 [restartedMain] "  " INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-07-22 23:56:53.921 [Thread-69] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-14 - Shutdown initiated...
+2021-07-22 23:56:53.923 [Thread-69] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-14 - Shutdown completed.
+2021-07-22 23:56:54.193 [restartedMain] "  " INFO  io.github.talelin.latticy.LatticyApplication - Starting LatticyApplication using Java 1.8.0_292 on 192.168.1.2 with PID 63375 (/Users/mac/Downloads/lin-cms-spring-boot-0.2.1-RELEASE/target/classes started by mac in /Users/mac/Downloads/lin-cms-spring-boot-0.2.1-RELEASE)
+2021-07-22 23:56:54.193 [restartedMain] "  " INFO  io.github.talelin.latticy.LatticyApplication - The following profiles are active: dev
+2021-07-22 23:56:54.436 [restartedMain] "  " INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'commonConfiguration' of type [io.github.talelin.latticy.common.configuration.CommonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-22 23:56:54.506 [restartedMain] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 5000 (http)
+2021-07-22 23:56:54.507 [restartedMain] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-5000"]
+2021-07-22 23:56:54.507 [restartedMain] "  " INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-07-22 23:56:54.507 [restartedMain] "  " INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-22 23:56:54.516 [restartedMain] "  " INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-07-22 23:56:54.516 [restartedMain] "  " INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 320 ms
+2021-07-22 23:56:54.542 [restartedMain] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-15 - Starting...
+2021-07-22 23:56:54.546 [restartedMain] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-15 - Start completed.
+2021-07-22 23:56:54.546 [restartedMain] "  " INFO  o.s.b.autoconfigure.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/sleeve?useSSL=false&serverTimezone=UTC&characterEncoding=UTF8'
+2021-07-22 23:56:55.387 [restartedMain] "  " INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-07-22 23:56:55.410 [restartedMain] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-5000"]
+2021-07-22 23:56:55.413 [restartedMain] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 5000 (http) with context path ''
+2021-07-22 23:56:55.449 [restartedMain] "  " INFO  io.github.talelin.latticy.LatticyApplication - Started LatticyApplication in 1.297 seconds (JVM running for 472.381)
+2021-07-22 23:56:55.452 [restartedMain] "  " INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-07-22 23:57:30.512 [Thread-73] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-15 - Shutdown initiated...
+2021-07-22 23:57:30.513 [Thread-73] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-15 - Shutdown completed.
+2021-07-22 23:57:30.799 [restartedMain] "  " INFO  io.github.talelin.latticy.LatticyApplication - Starting LatticyApplication using Java 1.8.0_292 on 192.168.1.2 with PID 63375 (/Users/mac/Downloads/lin-cms-spring-boot-0.2.1-RELEASE/target/classes started by mac in /Users/mac/Downloads/lin-cms-spring-boot-0.2.1-RELEASE)
+2021-07-22 23:57:30.800 [restartedMain] "  " INFO  io.github.talelin.latticy.LatticyApplication - The following profiles are active: dev
+2021-07-22 23:57:31.061 [restartedMain] "  " INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'commonConfiguration' of type [io.github.talelin.latticy.common.configuration.CommonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-22 23:57:31.136 [restartedMain] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 5000 (http)
+2021-07-22 23:57:31.137 [restartedMain] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-5000"]
+2021-07-22 23:57:31.138 [restartedMain] "  " INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-07-22 23:57:31.138 [restartedMain] "  " INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-22 23:57:31.146 [restartedMain] "  " INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-07-22 23:57:31.146 [restartedMain] "  " INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 343 ms
+2021-07-22 23:57:31.171 [restartedMain] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-16 - Starting...
+2021-07-22 23:57:31.177 [restartedMain] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-16 - Start completed.
+2021-07-22 23:57:31.177 [restartedMain] "  " INFO  o.s.b.autoconfigure.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/sleeve?useSSL=false&serverTimezone=UTC&characterEncoding=UTF8'
+2021-07-22 23:57:32.154 [restartedMain] "  " INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-07-22 23:57:32.194 [restartedMain] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-5000"]
+2021-07-22 23:57:32.197 [restartedMain] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 5000 (http) with context path ''
+2021-07-22 23:57:32.246 [restartedMain] "  " INFO  io.github.talelin.latticy.LatticyApplication - Started LatticyApplication in 1.49 seconds (JVM running for 509.178)
+2021-07-22 23:57:32.249 [restartedMain] "  " INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-07-22 23:57:33.605 [Thread-77] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-16 - Shutdown initiated...
+2021-07-22 23:57:33.607 [Thread-77] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-16 - Shutdown completed.
+2021-07-22 23:57:34.111 [restartedMain] "  " INFO  io.github.talelin.latticy.LatticyApplication - Starting LatticyApplication using Java 1.8.0_292 on 192.168.1.2 with PID 63375 (/Users/mac/Downloads/lin-cms-spring-boot-0.2.1-RELEASE/target/classes started by mac in /Users/mac/Downloads/lin-cms-spring-boot-0.2.1-RELEASE)
+2021-07-22 23:57:34.111 [restartedMain] "  " INFO  io.github.talelin.latticy.LatticyApplication - The following profiles are active: dev
+2021-07-22 23:57:34.405 [restartedMain] "  " INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'commonConfiguration' of type [io.github.talelin.latticy.common.configuration.CommonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-22 23:57:34.470 [restartedMain] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 5000 (http)
+2021-07-22 23:57:34.472 [restartedMain] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-5000"]
+2021-07-22 23:57:34.472 [restartedMain] "  " INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-07-22 23:57:34.472 [restartedMain] "  " INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-22 23:57:34.482 [restartedMain] "  " INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-07-22 23:57:34.482 [restartedMain] "  " INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 368 ms
+2021-07-22 23:57:34.507 [restartedMain] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-17 - Starting...
+2021-07-22 23:57:34.513 [restartedMain] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-17 - Start completed.
+2021-07-22 23:57:34.513 [restartedMain] "  " INFO  o.s.b.autoconfigure.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/sleeve?useSSL=false&serverTimezone=UTC&characterEncoding=UTF8'
+2021-07-22 23:57:35.457 [restartedMain] "  " INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-07-22 23:57:35.483 [restartedMain] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-5000"]
+2021-07-22 23:57:35.485 [restartedMain] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 5000 (http) with context path ''
+2021-07-22 23:57:35.518 [restartedMain] "  " INFO  io.github.talelin.latticy.LatticyApplication - Started LatticyApplication in 1.453 seconds (JVM running for 512.449)
+2021-07-22 23:57:35.519 [restartedMain] "  " INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-07-22 23:58:20.770 [Thread-81] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-17 - Shutdown initiated...
+2021-07-22 23:58:20.772 [Thread-81] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-17 - Shutdown completed.
+2021-07-22 23:58:21.012 [restartedMain] "  " INFO  io.github.talelin.latticy.LatticyApplication - Starting LatticyApplication using Java 1.8.0_292 on 192.168.1.2 with PID 63375 (/Users/mac/Downloads/lin-cms-spring-boot-0.2.1-RELEASE/target/classes started by mac in /Users/mac/Downloads/lin-cms-spring-boot-0.2.1-RELEASE)
+2021-07-22 23:58:21.013 [restartedMain] "  " INFO  io.github.talelin.latticy.LatticyApplication - The following profiles are active: dev
+2021-07-22 23:58:21.320 [restartedMain] "  " INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'commonConfiguration' of type [io.github.talelin.latticy.common.configuration.CommonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-22 23:58:21.405 [restartedMain] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 5000 (http)
+2021-07-22 23:58:21.405 [restartedMain] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-5000"]
+2021-07-22 23:58:21.406 [restartedMain] "  " INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-07-22 23:58:21.406 [restartedMain] "  " INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-22 23:58:21.417 [restartedMain] "  " INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-07-22 23:58:21.417 [restartedMain] "  " INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 402 ms
+2021-07-22 23:58:21.445 [restartedMain] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-18 - Starting...
+2021-07-22 23:58:21.449 [restartedMain] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-18 - Start completed.
+2021-07-22 23:58:21.450 [restartedMain] "  " INFO  o.s.b.autoconfigure.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/sleeve?useSSL=false&serverTimezone=UTC&characterEncoding=UTF8'
+2021-07-22 23:58:22.397 [restartedMain] "  " INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-07-22 23:58:22.428 [restartedMain] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-5000"]
+2021-07-22 23:58:22.430 [restartedMain] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 5000 (http) with context path ''
+2021-07-22 23:58:22.473 [restartedMain] "  " INFO  io.github.talelin.latticy.LatticyApplication - Started LatticyApplication in 1.539 seconds (JVM running for 559.405)
+2021-07-22 23:58:22.474 [restartedMain] "  " INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged

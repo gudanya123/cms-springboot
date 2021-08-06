@@ -1,0 +1,2 @@
+2021-07-27 18:04:14.756 [http-nio-5000-exec-2] "GET /favicon.ico HTTP/1.1" WARN  org.springframework.web.servlet.PageNotFound - No mapping for GET /favicon.ico
+2021-07-27 18:04:14.829 [http-nio-5000-exec-2] "GET /favicon.ico HTTP/1.1" WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for GET /favicon.ico]
